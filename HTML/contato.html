@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-widht">
+        <title>Pag 3 -Contatos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="produtos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="logo.png" alt="Logo barbearia">
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="teste.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <fieldset>
+                    <label for="nome" class="margem">
+                        Nome
+                    </labe>
+                    <input type="text" id="nome" class="input-padrao" required>
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="exemplo@dominio.com">
+                    <label for="telefone" class="margem">
+                        Telefone
+                    </label>
+                    <input type="tel" id="telefone" class="input-padrao"required placeholder="(XX) XXXXX-XXXX">
+                    <label for="mensagem" class="margem">
+                        Mensagem
+                    </label>
+                    <textarea id="mensagem" class="input-padrao" ></textarea required>
+                </fieldset>
+                <fieldset>
+                    <legend class="margem2" >
+                        Como prefere nosso contato?
+                    </legend>
+                    <label for="radio-email" class="margem3">
+                        <input type="radio" name="contato" value="email" id="radio-email" class="radio">
+                        E-mail
+                    </label>
+                    <label for="radio-telefone" class="margem3">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone" class="radio">
+                        Telefone
+                    </label>
+                    <label for="radio-zap" class="margem3      ">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-zap" class="radio" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend class="margem2">
+                        Qual horário prefere ser atendido?
+                    </legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <label for="check" class="margem3">
+                    <input type="checkbox" id="check" class="check" checked>
+                    Gostaria de receber novidades por email?
+                </label>
+                <input type="submit" value="Enviar" class="submit">
+                
+                
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Seg</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Qua</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sex</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="logo-branco.png"  alt="Logo barbearia">
+            <p class="copyright"> &copy; Copyright Barbearia Alura</p>
+        </footer>
+    </body>
+</html>
